@@ -1,0 +1,40 @@
+
+int a;
+a = 1;
+int b;
+b = 1;
+int c;
+c = 2;
+int d;
+d = 3;
+e = a == b;   // 1
+f = !(a == b);  // 0
+g = (a==b && a==c );  // 0
+h = !(a==b && a==c ); // 1
+i = b < c && a < b;  // 0
+j = b < c || a < b;  // 1
+k = a != b && c / 2 == d; // 0
+l = a == b && c / 2 <= d; // 1
+m = !(a == b && c / 2 <= d); // 0
+n = !a + !b; // 0
+o = d * 4 % 10 == c; // 1
+p = ((!(e == f) && !(g == h) && !(i == j)) || !(a ==c)); // 1
+q = ((!(e != f) && !(g != h) && !(i != j)) || !(a !=c)); // 0
+int abc;
+abc = 10;
+int qwe;
+qwe = 5;
+int y;
+y = abc >= qwe && d / 3 == b; // 1
+int u;
+u = (abc >= qwe) && !(d / 3 == b); // 0
+int w;
+w = !(abc >= qwe) && (d / 3 == b); // 0
+int z;
+z = !(abc >= qwe && d / 3 == b); // 0
+int aa;
+aa = !(abc >= qwe && d / 3 == !b); // 1
+int bb;
+bb = b < c && abc / qwe == b; // 0
+int cc;
+cc = b < c && abc / qwe == c; // 1
